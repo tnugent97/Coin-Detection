@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at ram_singleport_be_fpga.v(132): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at ram_singleport_be_fpga.v(183): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at ram_singleport_be_fpga.v(239): always construct contains both blocking and non-blocking assignments

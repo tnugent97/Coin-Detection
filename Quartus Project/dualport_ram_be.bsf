@@ -1,0 +1,163 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 544 192)
+	(text "dualport_ram_be" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst" (rect 8 160 20 172)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "data_in[width*no_of_dualport_readwrite_port-1..0]" (rect 0 0 191 12)(font "Arial" ))
+		(text "data_in[width*no_of_dualport_readwrite_port-1..0]" (rect 21 27 212 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "addr[addr_width*no_of_dualport_readwrite_port-1..0]" (rect 0 0 204 12)(font "Arial" ))
+		(text "addr[addr_width*no_of_dualport_readwrite_port-1..0]" (rect 21 43 225 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "re[no_of_dualport_readwrite_port*num_byte_enables-1..0]" (rect 0 0 228 12)(font "Arial" ))
+		(text "re[no_of_dualport_readwrite_port*num_byte_enables-1..0]" (rect 21 59 249 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "we[no_of_dualport_readwrite_port*num_byte_enables-1..0]" (rect 0 0 231 12)(font "Arial" ))
+		(text "we[no_of_dualport_readwrite_port*num_byte_enables-1..0]" (rect 21 75 252 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 91 31 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "a_rst" (rect 0 0 21 12)(font "Arial" ))
+		(text "a_rst" (rect 21 107 42 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "s_rst" (rect 0 0 21 12)(font "Arial" ))
+		(text "s_rst" (rect 21 123 42 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "en" (rect 0 0 9 12)(font "Arial" ))
+		(text "en" (rect 21 139 30 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 528 32)
+		(output)
+		(text "data_out[width*no_of_dualport_readwrite_port-1..0]" (rect 0 0 197 12)(font "Arial" ))
+		(text "data_out[width*no_of_dualport_readwrite_port-1..0]" (rect 310 27 507 39)(font "Arial" ))
+		(line (pt 528 32)(pt 512 32)(line_width 3))
+	)
+	(parameter
+		"ram_id"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"words"
+		"00000000000000000000000100000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"width"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"addr_width"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"a_reset_active"
+		"0"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"s_reset_active"
+		"1"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"enable_active"
+		"1"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"re_active"
+		"1"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"we_active"
+		"1"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"num_byte_enables"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"clock_edge"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"num_input_registers"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"num_output_registers"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"no_of_dualport_readwrite_port"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 512 160)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 544 -64 644 16))
+)
