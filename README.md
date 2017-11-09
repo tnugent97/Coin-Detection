@@ -11,4 +11,4 @@ Mikkel Jordahn, Marco Lavelle, Thomas Nugent,
 Group 6,
 Coin Detection
 
-More information [here](www.thomasnugent.me.uk/university/01_fpga.php).
+More information [here](http://www.thomasnugent.me.uk/university/01_fpga.php).
